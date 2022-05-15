@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="styles.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="app.js"></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+
+<body>
+  <section class="search__section">
+    <h1 class="search__section__heading">IP Address Tracker</h1>
+    <form action="" class="search__section__form">
+      <input type="text" class="search__section__form__input">
+      <div class="search__section__form__error"></div>
+      <button type="submit" class="search__section__form__btn"><img src="./images/icon-arrow.svg" alt=""></button>
+    </form>
+    <div class="abs">
+      <div class="ip-address-tracking__details">
+        <div class="ip-address-tracking__details__box">
+          <h3 class="ip-address-tracking__details__box__heading">ip address</h3>
+          <p class="ip-address-tracking__details__box__value ip__address"></p>
+        </div>
+        <div class="ip-address-tracking__details__box">
+          <h3 class="ip-address-tracking__details__box__heading">Location</h3>
+          <p class="ip-address-tracking__details__box__value location"></p>
+        </div>
+        <div class="ip-address-tracking__details__box">
+          <h3 class="ip-address-tracking__details__box__heading">timezone</h3>
+          <p class="ip-address-tracking__details__box__value timezone"></p>
+        </div>
+        <div class="ip-address-tracking__details__box">
+          <h3 class="ip-address-tracking__details__box__heading">isp</h3>
+          <p class="ip-address-tracking__details__box__value isp"></p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <div id="mapid"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
